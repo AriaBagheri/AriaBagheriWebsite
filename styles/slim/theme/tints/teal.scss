@@ -1,0 +1,18 @@
+$tint-teal: (
+        dark: (
+                "tint-underlay": #50CCE2,
+                "tint-main": #40C8E0,
+                "tint-disabled": #2CC2DD,
+                "tint-low-contrast": #1FA9C1,
+                "tinted-button-background": #092E35,
+                "tinted-button-background-underlay": #0C3C46,
+        ),
+        light: (
+                "tint-underlay": #30B0C7,
+                "tint-main": #2CA0B5,
+                "tint-disabled": #2892A4,
+                "tint-low-contrast": #248394,
+                "tinted-button-background": #EFF9FB,
+                "tinted-button-background-underlay": #DEF3F7,
+        )
+)

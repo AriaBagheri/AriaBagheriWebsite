@@ -1,0 +1,23 @@
+.title{
+	color: white;
+	padding-block: 10px;
+	padding-inline: 20px;
+	text-align: center;
+}
+.description{
+	text-align: center;
+	margin-block: 10px;
+	background-image: linear-gradient(120deg, var(--tint-underlay) 0%, var(--tint-disabled) 100%);
+	background-size: 300%;
+	padding-block: 40px;
+	padding-inline: 10px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0 50%; }
+}

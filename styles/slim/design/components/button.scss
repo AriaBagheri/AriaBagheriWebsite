@@ -1,0 +1,80 @@
+button, .button {
+  padding: 15px 20px;
+  border-radius: var(--border-radius-less);
+  min-height: var(--button-min-height);
+  min-width: var(--button-min-width);
+  margin: 10pt;
+  color: var(--text-level-0);
+  background-color: var(--tint-main);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {
+  background-color: var(--tint-underlay);
+}
+
+button:disabled, .button:disabled {
+  background-color: var(--tint-disabled);
+}
+
+.no-button{
+  background-color: transparent;
+  color: white;
+  margin: unset;
+  &:hover, &:active, &:focus{
+    background-color: transparent;
+  }
+}
+
+.button-plain {
+  opacity: 0.8;
+  color: var(--tint-main);
+  background-color: transparent;
+}
+
+.button-plain:hover, .button-plain:active, .button-plain:focus {
+  opacity: 1;
+  color: var(--tint-underlay);
+  background-color: transparent;
+}
+
+.button-gray {
+  opacity: 0.8;
+  color: var(--tint-main);
+  background-color: var(--item-main);
+}
+
+.button-gray:hover, .button-gray:active, .button-gray:focus {
+  opacity: 1;
+  color: var(--tint-underlay);
+  background-color: var(--item-underlay);
+}
+
+.button-tinted {
+  opacity: 0.8;
+  color: var(--tint-main);
+  background-color: var(--tinted-button-background);
+}
+
+.button-tinted:hover, .button-tinted:active, .button-tinted:focus {
+  opacity: 1;
+  color: var(--text-level-0);
+  background-color: var(--tinted-button-background-underlay);
+}
+
+.button-filled {
+  opacity: 1;
+  color: var(--text-level-0);
+  background-color: var(--tint-main);
+}
+
+.button-filled:hover, .button-filled:active, .button-filled:focus {
+  opacity: 1;
+  color: var(--text-level-0);
+  background-color: var(--tint-underlay);
+}
+
+.animated .button, .animated button {
+  transition: border-radius 400ms ease, background-color 400ms ease, color 400ms ease;
+}

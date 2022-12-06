@@ -1,0 +1,73 @@
+blockquote, .blockquote {
+  border-radius: var(--border-radius-less);
+  padding: 1.7em;
+  max-width: 40em;
+  width: fit-content;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  background: var(--item-main);
+  color: var(--text-level-2);
+}
+
+.blockquote-plain {
+  border-radius: var(--border-radius-less);
+  padding: 1.7em;
+  max-width: 40em;
+  width: fit-content;
+  box-sizing: border-box;
+  background: var(--item-main);
+  color: var(--text-level-2);
+}
+
+.blockquote-plain:hover {
+  background: var(--item-main);
+  color: var(--text-level-2);
+}
+
+.blockquote-bordered {
+  border-radius: var(--border-radius-less);
+  padding: 1.7em;
+  border-left: 10px solid;
+  border-left-color: var(--tint-main)!important;
+}
+
+.blockquote-bordered:hover {
+  border-left-color: var(--tint-underlay)!important;
+}
+
+.blockquote-quoted {
+  display: block;
+  border-radius: var(--border-radius-less);
+  padding: 1.7em;
+  border-left: 10px solid;
+  border-left-color: var(--tint-main)!important;
+}
+
+.blockquote-quoted:hover {
+  border-left-color: var(--tint-underlay)!important;
+}
+
+.blockquote-quoted::before {
+  content: "\201c";
+  font-size: 100px;
+  color: var(--tint-main);
+}
+.blockquote-quoted:hover::before {
+  color: var(--tint-underlay);
+}
+
+blockquote > cite, .blockquote > cite{
+  float: right;
+}
+
+blockquote > cite::before {
+  content: "\2013";
+  font-size: 1.383em;
+  padding-right: 10px;
+}
+
+blockquote:has(cite){
+  padding-bottom: 0.85em!important;
+}

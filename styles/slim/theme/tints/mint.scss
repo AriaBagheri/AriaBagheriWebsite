@@ -1,0 +1,18 @@
+$tint-mint: (
+        dark: (
+                tint-underlay: #66D4CF,
+                tint-main: #60D2CC,
+                tint-disabled: #50CEC7,
+                tint-low-contrast: #40C9C2,
+                tinted-button-background-underlay: #12403D,
+                tinted-button-background: #0D302D,
+        ),
+        light: (
+                tinted-button-background: #EBFFFE,
+                tinted-button-background-underlay: #D6FFFD,
+                tint-underlay: #00C7BE,
+                tint-main: #00E0D5,
+                tint-disabled: #00F5E9,
+                tint-low-contrast: #ADFFFB,
+        )
+)

@@ -1,0 +1,18 @@
+$tint-indigo: (
+        dark: (
+                "tint-underlay": #5E5CE6,
+                "tint-main": #514FE3,
+                "tint-disabled": #1B199F,
+                "tint-low-contrast": #18168D,
+                "tinted-button-background-underlay": #0C0B47,
+                "tinted-button-background": #060623,
+        ),
+        light: (
+                "tinted-button-background": #EEEEFC,
+                "tinted-button-background-underlay": #DCDCF9,
+                "tint-underlay": #8585EA,
+                "tint-main": #7373E7,
+                "tint-disabled": #6262E4,
+                "tint-low-contrast": #5151E1,
+        )
+)

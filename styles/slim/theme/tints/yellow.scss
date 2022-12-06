@@ -1,0 +1,18 @@
+$tint-yellow: (
+        dark: (
+                "tint-underlay": #FFD60A,
+                "tint-main": #F5CC00,
+                "tint-disabled": #E0BB00,
+                "tint-low-contrast": #B89900,
+                "tinted-button-background-underlay": #B89900,
+                "tinted-button-background": #A38800,
+        ),
+        light: (
+                "tinted-button-background": #FFFBEB,
+                "tinted-button-background-underlay": #FFF3C2,
+                "tint-underlay": #FFCC00,
+                "tint-main": #FFD21F,
+                "tint-disabled": #FFD633,
+                "tint-low-contrast": #FFDA47,
+        )
+)

@@ -1,0 +1,18 @@
+.video{
+  position: fixed;
+  inset: 0 0 0 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+.videoOverlay{
+  position: relative;
+  z-index: 200!important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(#00000000 30%, var(--background-color) 90%, var(--background-color) 100%);;
+}

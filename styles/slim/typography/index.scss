@@ -1,0 +1,49 @@
+@import "h1";
+@import "h2";
+@import "h3";
+@import "h4";
+@import "h5";
+@import "h6";
+@import "input";
+@import "button";
+@import "p";
+@import "blockquote";
+@import "a";
+@import "abbr";
+@import "address";
+@import "cite";
+@import "list";
+@import "textarea";
+
+body {
+  --font-sans-serif: "Lato", sans-serif;
+  --font-cursive: "Pacifico", cursive;
+}
+
+.cursive{
+  font-family: var(--font-cursive);
+}
+
+.small-font {
+  font-size: 30pt;
+}
+
+.medium-font {
+  font-size: 35pt;
+}
+
+.large-font {
+  font-size: 40pt;
+}
+
+@media screen and (max-width: 1280px){
+  .small-font {
+    font-size: 20pt;
+  }
+  .medium-font{
+    font-size: 25pt;
+  }
+  .large-font{
+    font-size: 30pt;
+  }
+}

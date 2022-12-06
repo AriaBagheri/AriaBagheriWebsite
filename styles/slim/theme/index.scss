@@ -1,0 +1,39 @@
+@use "sass:map";
+@import "themes";
+@import "tints";
+
+@each $theme in map.keys($themes) {
+  .#{$theme} {
+    --background-color: #{map.get($themes, $theme, "background-color")};
+    --background-color-shadow: #{map.get($themes, $theme, "background-color-shadow")};
+    --background-color-deep: #{map.get($themes, $theme, "background-color-deep")};
+
+    --item-underlay: #{map.get($themes, $theme, "item-underlay")};
+    --item-main: #{map.get($themes, $theme, "item-main")};
+    --item-disabled: #{map.get($themes, $theme, "item-disabled")};
+    --item-low-contrast: #{map.get($themes, $theme, "item-low-contrast")};
+
+    --text-level-0: #{map.get($themes, $theme, "text-level-0")};
+    --text-level-1: #{map.get($themes, $theme, "text-level-1")};
+    --text-level-2: #{map.get($themes, $theme, "text-level-2")};
+  }
+  @each $tint in map.keys($tints) {
+    .#{$theme}.#{$tint} {
+      --tint-underlay: #{map.get($tints, $tint, $theme, "tint-underlay")};
+      --tint-main: #{map.get($tints, $tint, $theme, "tint-main")};
+      --tint-disabled: #{map.get($tints, $tint, $theme, "tint-disabled")};
+      --tint-low-contrast: #{map.get($tints, $tint, $theme, "tint-low-contrast")};
+
+      --tinted-button-background: #{map.get($tints, $tint, $theme, "tinted-button-background")};
+      --tinted-button-background-underlay: #{map.get($tints, $tint, $theme, "tinted-button-background-underlay")};
+    }
+    .#{$tint}-tint-background {
+      background-color: #{map.get($tints, $tint, $theme, "tint-main")};
+
+      &:hover {
+        background-color: #{map.get($tints, $tint, $theme, "tint-underlay")};
+      }
+    }
+  }
+}
+

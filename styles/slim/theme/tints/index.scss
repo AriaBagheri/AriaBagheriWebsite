@@ -1,0 +1,25 @@
+@import "blue";
+@import "green";
+@import "teal";
+@import "purple";
+@import "red";
+@import "orange";
+@import "yellow";
+@import "mint";
+@import "cyan";
+@import "indigo";
+@import "pink";
+
+$tints: (
+        "blue": $tint-blue,
+        "green": $tint-green,
+        "teal": $tint-teal,
+        "purple": $tint-purple,
+        "red": $tint-red,
+        "orange": $tint-orange,
+        "yellow": $tint-yellow,
+        "mint": $tint-mint,
+        "cyan": $tint-cyan,
+        "indigo": $tint-indigo,
+        "pink": $tint-pink,
+)

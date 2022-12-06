@@ -1,0 +1,28 @@
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  background: linear-gradient(45deg, var(--tint-underlay), var(--tint-low-contrast));
+  padding-block: 40px;
+  & svg{
+    max-width: 100vw;
+  }
+  & h1{
+    z-index: 10;
+  }
+  & img{
+    position: absolute;
+    inset: 0 0 0 0;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.overlay{
+  position: absolute;
+  inset: 0 0 0 0;
+  background: linear-gradient(0deg, #00000000, var(--background-color));
+  z-index: 3;
+}

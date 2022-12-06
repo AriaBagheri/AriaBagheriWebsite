@@ -1,0 +1,129 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  & h1 {
+    margin-block: 20px;
+    z-index: 5;
+  }
+
+  & *:not(canvas) {
+    z-index: 5;
+  }
+
+}
+
+.speedometer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-block: 20px;
+  height: 200px;
+  background: var(--background-color-shadow);
+  border-radius: var(--border-radius-more);
+  backdrop-filter: blur(5px);
+  padding-block: 20px;
+
+  & > div:has(svg) {
+    width: 200px;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills button {
+  background-color: var(--background-color-shadow);
+  backdrop-filter: blur(5px);
+}
+
+.active {
+  background-color: var(--tint-main) !important;
+}
+
+.moreDetail {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: center;
+
+  & p:first-child {
+    margin-block: 0;
+    color: var(--text-level-0);
+    font-size: 50px;
+    font-weight: 900;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  & p {
+    margin-block: 0;
+    text-align: center;
+  }
+}
+
+.canvasBackground {
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  opacity: 0.5;
+  z-index: 1;
+  transform: scaleX(1.1);
+}
+
+.overlayBackground {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 2;
+  background: radial-gradient(#00000000 10%, var(--background-color) 60%, var(--background-color) 100%);
+}
+
+.speedometerSVG {
+  position: relative;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.circle {
+  fill: none;
+  stroke: url(#bubble-gradient-color);
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+.speedometerValue{
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  font-size: 50px;
+}
+
+.speedometerSVGContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px!important;
+}
+
+@media screen and (max-width: 768px){
+  .speedometer{
+    flex-direction: column;
+    height: unset;
+  }
+}

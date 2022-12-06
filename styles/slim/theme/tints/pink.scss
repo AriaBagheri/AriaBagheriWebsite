@@ -1,0 +1,18 @@
+$tint-pink: (
+        dark: (
+                "tint-underlay": #FF375F,
+                "tint-main": #FF335C,
+                "tint-disabled": #FF1F4B,
+                "tint-low-contrast": #F50031,
+                "tinted-button-background-underlay": #3D000C,
+                "tinted-button-background": #520010,
+        ),
+        light: (
+                "tinted-button-background": #FFD6DE,
+                "tinted-button-background-underlay": #FFC2CE,
+                "tint-underlay": #FF708D,
+                "tint-main": #FF5C7C,
+                "tint-disabled": #FF476C,
+                "tint-low-contrast": #FF1F4B,
+        )
+)

@@ -1,0 +1,54 @@
+@import "typography";
+@import "theme/index";
+@import "design";
+
+.padded-large, .padded-medium, .padded-small {
+  padding-top: 60px;
+}
+
+.padded-large {
+  transition: padding 400ms ease-in-out;
+  padding-inline: 15vw;
+}
+
+.padded-medium {
+  transition: padding 400ms ease-in-out;
+  padding-inline: 10vw;
+}
+
+.padded-small {
+  transition: padding 400ms ease-in-out;
+  padding-inline: 5vw;
+}
+
+@media screen and (max-width: 1280px) {
+  .padded-small, .padded-medium, .padded-large {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .padded-large {
+    padding-inline: 7vw;
+  }
+
+  .padded-medium {
+    padding-inline: 5vw;
+  }
+
+  .padded-small {
+    padding-inline: 2.5vw;
+  }
+}
+
+.lock-scroll {
+  overflow: clip;
+}
+
+.animated * {
+  transition: all 200ms ease;
+}
+
+.showSettingsModal .showOnShowSettings {
+    display: flex;
+}

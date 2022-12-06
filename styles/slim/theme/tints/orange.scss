@@ -1,0 +1,18 @@
+$tint-orange: (
+        dark: (
+                "tint-underlay": #FFA51F,
+                "tint-main": #FF9F0A,
+                "tint-disabled": #F59300,
+                "tint-low-contrast": #E08700,
+                "tinted-button-background-underlay": #663D00,
+                "tinted-button-background": #523100,
+        ),
+        light: (
+                "tint-underlay": #FF9500,
+                "tint-main": #FFA21F,
+                "tint-disabled": #FFAA33,
+                "tint-low-contrast": #FFB347,
+                "tinted-button-background": #FFDDAD,
+                "tinted-button-background-underlay": #FFCC85,
+        )
+)

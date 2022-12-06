@@ -1,0 +1,14 @@
+.title{
+	color: white;
+	padding-block: 10px;
+	text-align: center;
+}
+.container{
+  position: relative;
+  min-height: 50vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background: linear-gradient(180deg, var(--background-color) 10%, #00000055 100%);
+}

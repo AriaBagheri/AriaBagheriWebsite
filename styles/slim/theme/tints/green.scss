@@ -1,0 +1,18 @@
+$tint-green: (
+        dark: (
+                "tint-underlay": #30D158,
+                "tint-main": #2CC953,
+                "tint-disabled": #28B84C,
+                "tint-low-contrast": #25A745,
+                "tinted-button-background": #135323,
+                "tinted-button-background-underlay": #0F431C,
+        ),
+        light: (
+                "tint-underlay": #2AA248,
+                "tint-main": #2EB24F,
+                "tint-disabled": #32C356,
+                "tint-low-contrast": #34C759,
+                "tinted-button-background": #CEF2D7,
+                "tinted-button-background-underlay": #BDEFCA,
+        )
+)

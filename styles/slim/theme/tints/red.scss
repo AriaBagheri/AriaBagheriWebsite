@@ -1,0 +1,18 @@
+$tint-red: (
+        dark: (
+                "tint-underlay": #FF645C,
+                "tint-main": #FF453A,
+                "tint-disabled": #FF3D33,
+                "tint-low-contrast": #8F0700,
+                "tinted-button-background": #3D0300,
+                "tinted-button-background-underlay": #520400,
+        ),
+        light: (
+                "tint-underlay": #FF2A1F,
+                "tint-main": #FF3B30,
+                "tint-disabled": #FF5147,
+                "tint-low-contrast": #FF645C,
+                "tinted-button-background": #FFC5C2,
+                "tinted-button-background-underlay": #FFB1AD,
+        )
+)

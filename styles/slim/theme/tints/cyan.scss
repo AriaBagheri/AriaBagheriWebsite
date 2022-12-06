@@ -1,0 +1,18 @@
+$tint-cyan: (
+        dark: (
+                "tint-underlay": #64D2FF,
+                "tint-main": #1FBFFF,
+                "tint-disabled": #0ABAFF,
+                "tint-low-contrast": #0092CC,
+                "tinted-button-background-underlay": #002B3D,
+                "tinted-button-background": #001D29,
+        ),
+        light: (
+                "tinted-button-background": #EBF9FF,
+                "tinted-button-background-underlay": #D6F3FF,
+                "tint-underlay": #33C2FF,
+                "tint-main": #47C8FF,
+                "tint-disabled": #5CCEFF,
+                "tint-low-contrast": #85DAFF,
+        )
+)

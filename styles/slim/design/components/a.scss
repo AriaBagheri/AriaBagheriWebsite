@@ -1,0 +1,8 @@
+a, .a {
+  color: var(--tint-main);
+}
+
+a:hover, a:active, a:focus, .a:hover, .a:active, .a:focus {
+  color: var(--tint-underlay);
+  text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+abbr, .abbr {
+  color: var(--tint-main);
+  position: relative;
+  text-decoration: none;
+}
+
+abbr:after, .abbr:after {
+  font-size: 13px;
+  content: "?";
+  position: absolute;
+  inset: -5 0 unset unset;
+}
+
+abbr:hover::after {
+  position: absolute;
+  border-radius: var(--border-radius-less);
+  bottom: 100%;
+  left: 100%;
+  display: block;
+  font-size: 0.8em;
+  padding: 0.8em 0.9em 0.8em 0.9em;
+  background: var(--background-color);
+  border: 0.5px solid var(--tint-main);
+  content: attr(title);
+}
