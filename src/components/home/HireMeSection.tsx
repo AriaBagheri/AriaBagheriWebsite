@@ -7,7 +7,7 @@ function HireMeSection() {
     return (
         <Section isPadded={true} padSize={"large"} className={styles.container}>
             <Link href={"https://t.me/anintellectualhumanbeing"} className={'button'}>
-                Start a New Project !
+                Start a New Project!
             </Link>
         </Section>
     );
