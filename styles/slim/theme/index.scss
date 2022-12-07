@@ -13,6 +13,7 @@
     --item-disabled: #{map.get($themes, $theme, "item-disabled")};
     --item-low-contrast: #{map.get($themes, $theme, "item-low-contrast")};
 
+    --text-level-extreme: #{map.get($themes, $theme, "text-level-extreme")};
     --text-level-0: #{map.get($themes, $theme, "text-level-0")};
     --text-level-1: #{map.get($themes, $theme, "text-level-1")};
     --text-level-2: #{map.get($themes, $theme, "text-level-2")};

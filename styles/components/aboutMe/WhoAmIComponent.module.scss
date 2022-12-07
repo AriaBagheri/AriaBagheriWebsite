@@ -6,7 +6,7 @@
   justify-content: center;
   padding-block: 100px;
   width: 100vw;
-  background: linear-gradient(180deg, var(--background-color) 10%, #00000055 100%);
+  background: linear-gradient(180deg, var(--background-color) 10%, var(--background-color-shadow) 100%);
   & > div{
     display: flex;
     flex-direction: row;
@@ -25,6 +25,7 @@
   flex: 1;
   & p{
     margin-block: 5px;
+    color: var(--text-level-extreme);
   }
   & svg{
     margin-inline-end: 10px;
