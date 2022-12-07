@@ -23,7 +23,7 @@ function CyberKnowledgeIntroComponent() {
         }
     }, []);
     return (
-        <section className={styles.container}>
+        <section className={`${styles.container} dark`}>
             <Image src={"/KnowledgeBaseBackground.jpg"} width={1920} height={1080} alt={""}/>
             <div className={styles.overlay}/>
             <div>
