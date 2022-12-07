@@ -20,6 +20,7 @@ function CyberKnowledgeGoalsComponent() {
             window.removeEventListener("scroll", onScroll);
         }
     }, []);
+
     return (
         <section className={styles.containerInner}>
             <h1 className={'cursive'}>Goals</h1>
