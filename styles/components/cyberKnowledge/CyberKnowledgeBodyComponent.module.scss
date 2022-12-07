@@ -45,10 +45,9 @@
 
   & > div {
     width: 40vw;
-
+    margin-top: 20px;
     & h2 {
       width: 40vw;
-      margin-top: 0;
     }
   }
 }
@@ -101,7 +100,6 @@
     opacity: 0;
   }
   .containerInner > div {
-    margin-block: 20px;
     flex-direction: column-reverse;
   }
   .text {
