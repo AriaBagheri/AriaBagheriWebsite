@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+  height: 90vh;
+  padding-top: 0;
+  max-height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+
+  & > img {
+    object-fit: cover;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 90vh;
+    max-height: 90vh;
+    z-index: 2;
+  }
+
+  & > .overlay {
+    position: fixed;
+    inset: 0 0 unset 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #00000000 0%, var(--background-color) 150%);
+    z-index: 3;
+    text-align: center;
+  }
+
+  & > #headerSVG {
+    z-index: 4;
+
+    & > svg {
+      height: 90px;
+    }
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--tint-main);
+  z-index: 5;
+  margin-block: 0;
+  overflow: hidden;
+  height: 100%;
+
+  & h1, & h2 {
+    margin-block: 0;
+    text-align: center;
+  }
+
+  & > div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 40px;
+      max-width: 30vw;
+      min-height: 100vh;
+      height: 100vh;
+      text-align: justify;
+    }
+  }
+}
+
+.description {
+  min-width: 50vw !important;
+  width: 50vw !important;
+  max-width: 50vw !important;
+
+  & > p {
+    text-align: justify;
+  }
+}
+
+.descriptionAnimation {
+  max-width: 30vw;
+
+  & > div {
+    max-width: 30vw;
+  }
+}
+
+.reverseContainer {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  .body > div {
+    flex-direction: column-reverse;
+    min-height: unset!important;
+    height: unset!important;
+
+    & > div {
+      max-width: 100vw;
+      min-height: unset;
+      height: unset;
+
+      & > div:nth-child(2) {
+        max-width: unset;
+      }
+
+      & > div:nth-child(1) {
+        max-width: 30vw;
+      }
+
+    }
+  }
+  .body > .reverseContainer {
+    flex-direction: column;
+
+    min-height: unset;
+    height: unset;
+
+    & > div:nth-child(1) {
+      max-width: 30vw;
+    }
+
+    & > div:nth-child(2) {
+      max-width: unset;
+    }
+  }
+  .description{
+    min-width: unset!important;
+    width: unset!important;
+    max-width: unset!important;
+  }
+}

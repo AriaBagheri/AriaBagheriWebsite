@@ -1,11 +1,25 @@
-import React from 'react';
+'use client';
+import React, {useEffect} from 'react';
 import styles from "../../../styles/components/layout/Navbar.module.scss";
 import Link from "next/link";
 import ThemeModalOpenerButton from "../../slim/ThemeModalOpenerButton";
+import {GiHamburgerMenu} from "react-icons/gi";
 
 function NavigationBar() {
+    useEffect(() => {
+        const onResize = () => {
+        }
+        onResize();
+        window.addEventListener("resize", onResize);
+        return () => {
+            window.removeEventListener("resize", onResize);
+        }
+    }, []);
     return (
         <nav id={styles.container} className={'half-opaque-navbar'}>
+            <button className={'no-button expandable-navbar-unexpand'} onClick={()=>{
+                document.body.classList.remove("navbar-expanded");
+            }}/>
             <div>
                 <Link href={"/"}>
                     <h1 className={'h5'}>Aria Bagheri</h1>
@@ -25,6 +39,12 @@ function NavigationBar() {
                     <p className={'h6'}>Github</p>
                 </Link>
                 <ThemeModalOpenerButton className={styles.pushRightOnSmall}/>
+                <button className={`no-button ${styles.appearOnMid}`} onClick={() => {
+                    document.body.classList.add("navbar-expanded");
+                }}>
+                    <GiHamburgerMenu className={'h6'}/>
+                </button>
+
             </div>
         </nav>
     );

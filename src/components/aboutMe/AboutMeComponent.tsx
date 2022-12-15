@@ -36,10 +36,9 @@ function AboutMeComponent({noLearnMore = false, noTitle = false}: { noLearnMore?
                 <div className={styles.aboutMeText}>
                     <h2>I am Aria Bagheri</h2>
                     <p>
-                        I am Aria Bagheri. A passionate student of clean coding that takes code security seriously. A
-                        fast learner that spends more time profiling and optimizing the code than writing code. I live
-                        in New York and study what I am passionate about (Hint: It's Computer Science)! I keep my skills
-                        sharp and lose sleep over the slightest problems in my code.
+                        I am Aria Bagheri. I am a middle eastern software engineer based in NYC with a passion for technology and a strong drive to succeed. <br/>
+                        I have a proven track record of developing high-quality software solutions and possess a strong understanding of computer science principles and industry best practices. <br/>
+                        I am a team player who enjoys collaborating with others to solve complex problems and deliver exceptional results.
                     </p>
                     {
                         !noLearnMore && (

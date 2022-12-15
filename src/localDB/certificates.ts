@@ -121,7 +121,7 @@ export const certificates = [
         "thumbnail_url": "http://www.s3.ariabagheri.com/Certificates/The+Hong+Kong+University+of+Science+and+Technology+-+Front-End+Web+UI+Frameworks+and+Tools+-+Bootstrap+4.webp",
         "title": "Front-End Web UI Frameworks and Tools - Bootstrap 4",
         "priority": 4,
-        "description": "During this 4 week long course, I learned how to use the bootstrap system to streamline my web development, and style responsive and beautiful pages fast."
+        "description": "During this 4 week long course, I learned how to use the bootstrap system to streamline my web development, and style responsive and beautiful static fast."
     }, {
         "id": "9068f5c7-5c07-42cd-add1-fb32c8decaa0",
         "createdAt": "2022-10-14T16:19:24.280Z",

@@ -8,6 +8,9 @@ button, .button {
   background-color: var(--tint-main);
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {

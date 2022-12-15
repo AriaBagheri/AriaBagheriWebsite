@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--tint-disabled);
+  align-items: center;
+  justify-content: center;
+  padding-block: 10px;
+  flex-wrap: wrap;
+
+  & > button {
+    border-radius: var(--border-radius-more);
+    background-color: var(--item-main);
+    margin-inline: 5px;
+
+    &.active {
+      background-color: var(--tint-main);
+
+      &:hover {
+        background-color: var(--tint-underlay);
+      }
+    }
+  }
+}

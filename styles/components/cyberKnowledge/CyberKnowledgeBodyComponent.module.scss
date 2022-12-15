@@ -40,26 +40,34 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 40vw;
+  margin-left:auto;
+  margin-right: auto;
+  width: 55vw;
   text-align: center;
 
   & > div {
-    width: 40vw;
+    width: 55vw;
     margin-top: 40px;
     & h2 {
-      width: 40vw;
+      width: 55vw;
       margin-block: 0;
+    }
+    & p{
+      font-size: 40%;
+      text-wrap: avoid;
+      text-align: justify;
+      word-break: break-word;
     }
   }
 }
 
 .imageContainer {
-  max-width: calc(50vw - 80px);
+  max-width: calc(30vw - 80px);
   aspect-ratio: 16/9;
 
   & > :not(.imageBig) {
     filter: saturate(100%);
-    width: calc(50vw - 80px);
+    width: calc(30vw - 80px);
     aspect-ratio: 16/9;
     height: auto;
     z-index: 3;
@@ -110,6 +118,10 @@
       width: 100%;
       & > h2{
         width: 100%;
+        text-align: center;
+      }
+      & > p{
+        text-align: center;
       }
     }
   }

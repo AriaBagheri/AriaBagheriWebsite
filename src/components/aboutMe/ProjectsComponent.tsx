@@ -24,7 +24,7 @@ function ProjectsComponent() {
             <h1 className={styles.title}>Projects</h1>
             <div>
                 {
-                    projects.map((i, index) => (
+                    projects.slice(0, 3).map((i, index) => (
                         <article key={i.id} className={`${styles.project} ${index % 2 == 0 ? '' : styles.projectReverse}`}>
                             <div>
                                 {i.animation}
@@ -34,7 +34,7 @@ function ProjectsComponent() {
                                 <p>
                                     {i.summary}
                                 </p>
-                                <a href={"/"} className={"button"}>
+                                <a href={i.link} className={"button"}>
                                     Learn More!
                                 </a>
                             </div>

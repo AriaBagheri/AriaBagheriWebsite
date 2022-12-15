@@ -15,17 +15,21 @@ function ThemeManager() {
         document.body.classList.add(theme);
         document.body.classList.add(tint);
     }, []);
-    useEffect(()=>{
-        const onScroll = ()=>{
-            if (window.scrollY >= 100){
+    useEffect(() => {
+        const scrollableBody = document.getElementById("scrollable-body");
+        if (!scrollableBody) {
+            return
+        }
+        const onScroll = () => {
+            if (scrollableBody.scrollTop >= 10) {
                 document.body.classList.add("page-scrolled");
             } else {
                 document.body.classList.remove("page-scrolled");
             }
         }
-        window.addEventListener("scroll", onScroll);
-        return ()=>{
-            window.removeEventListener("scroll", onScroll);
+        scrollableBody.addEventListener("scroll", onScroll);
+        return () => {
+            scrollableBody.removeEventListener("scroll", onScroll);
         }
     }, [])
     return (
