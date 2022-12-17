@@ -50,22 +50,25 @@
   display: flex;
 }
 
-.themeFields{
+.themeFields {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  div{
+
+  div {
     display: flex;
     flex-direction: row;
     height: 80px;
     align-items: center;
     width: calc(100% - 20px);
     padding-inline: 20px;
-    & > div:first-child{
+
+    & > div:first-child {
       display: flex;
       align-items: center;
     }
-    & > div:nth-child(2){
+
+    & > div:nth-child(2) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -79,6 +82,7 @@
   max-width: 50px;
   max-height: 50px;
   min-height: 50px;
+  margin-inline: 5px;
 }
 
 .modeButton {
@@ -104,11 +108,67 @@
   height: 40px;
   vertical-align: middle;
 }
-.switchBoxContainer > div{
+
+.switchBoxContainer > div {
   margin-left: auto;
   width: min-content;
   margin-right: 0;
 }
-.tintContainer{
-  margin-right: 10px;
+
+.tintContainer {
+  margin-right: 5px;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  flex: 1;
+
+  & > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--item-main);
+    flex: 1;
+    border-radius: var(--border-radius-more);
+    padding-bottom: 40px;
+
+    & h1 {
+      margin-block: 40px;
+    }
+
+    & p {
+      min-width: 60px;
+    }
+
+    & > div:nth-child(4){
+      flex: 1;
+      height: unset;
+      max-height: unset;
+     }
+    & > div:nth-child(2), & > div:nth-child(4), & > div:nth-child(5) {
+      flex-direction: column;
+      height: 160px;
+      max-height: unset;
+      flex: 1;
+
+      & button {
+        margin-right: 5px;
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        height: 100%;
+        flex: 1;
+        flex-wrap: wrap;
+        max-height: unset;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }

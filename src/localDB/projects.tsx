@@ -15,7 +15,6 @@ export const projects = [
         animation: <LottieWrapper animationData={rocketAnimationLottie} loop={true}
                                   className={styles.slimLibraryAnimation}/>,
         link: "/projects/slimLibrary"
-
     },
     {
         id: "PatientManagementSystem",
